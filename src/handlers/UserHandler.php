@@ -42,7 +42,7 @@ class UserHandler {
 
               User::update()    
                     ->set('token', $token)
-                    ->where('email,', $email)
+                    ->where('email', $email)
                 ->execute();
 
               return $token;
